@@ -248,6 +248,22 @@
                                               ToolTip="{StaticResource PL_LIVE}" />
                                 </Grid>
                             </GroupBox>
+                            <GroupBox Grid.Row="1" Grid.Column="0" Margin="10,0,0,0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Label Margin="10,10,0,0" Grid.Row="0" Content="MIDI Converter"
+                                           HorizontalAlignment="Left"/>
+                                    <ComboBox Margin="110,10,0,0" Grid.Row="0" x:Name="MidiConverterSelection"
+                                              SelectionChanged="MidiConverter_selection_SelectionChanged"
+                                              HorizontalAlignment="Left" VerticalAlignment="Top" Width="135"
+                                              Padding="5" ToolTip="{StaticResource UI_MIDICONVERTER}">
+                                        <ComboBoxItem>MogAmp (Fast)</ComboBoxItem>
+                                        <ComboBoxItem>BMP Classic (Slow)</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+                            </GroupBox>
                             <GroupBox Grid.Row="1" Grid.Column="1" Margin="10,0,0,0">
                                 <Grid>
                                     <Grid.RowDefinitions>

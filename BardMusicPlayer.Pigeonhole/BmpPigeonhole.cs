@@ -124,6 +124,11 @@ public class BmpPigeonhole : JsonSettings.JsonSettings
     public virtual bool UsePluginForInstrumentOpen { get; set; }
 
     /// <summary>
+    /// Contains the sequencer selection.
+    /// </summary>
+    public virtual int MidiConverter_Type { get; set; } = 0;
+
+    /// <summary>
     /// Enable Dark Mode theme.
     /// </summary>
     public virtual bool DarkStyle { get; set; }

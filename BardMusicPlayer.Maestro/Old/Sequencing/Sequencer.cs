@@ -418,7 +418,7 @@ public class Sequencer : Sequencer_Internal
 
         LoadedFileType = FILETYPES.BmpSong;
         LoadedBmpSong = bmpSong;
-        Sequence = new Sequence(bmpSong.GetSequencerMidi());
+        Sequence = BmpPigeonhole.Instance.MidiConverter_Type == 0 ? new Sequence(bmpSong.GetProcessedSequencerMidi()) : new Sequence(bmpSong.GetDryWetSequencerMidi());
         load(Sequence, trackNum);
     }
 
