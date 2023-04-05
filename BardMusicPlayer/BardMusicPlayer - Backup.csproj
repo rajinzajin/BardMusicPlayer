@@ -24,8 +24,7 @@
     <Product>BardMusicPlayer</Product>
     <Authors>MoogleTroupe</Authors>
     <Copyright>Copyright © MoogleTroupe 2023</Copyright>
-    <Deterministic>false</Deterministic>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Version>2.0.0.7</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
